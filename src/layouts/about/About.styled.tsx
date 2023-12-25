@@ -11,10 +11,10 @@ export const AboutSection = styled.section`
 
   & p {
     font-family: Poppins, serif;
-    font-size: 18px;
+    font-size: clamp(12px, 5vw, 18px);
     font-style: normal;
     font-weight: 400;
-    line-height: 26px;
+    line-height: clamp(16px, 5vw, 26px);
   }
 `
 export const WorkExperience = styled.section`
@@ -33,10 +33,10 @@ export const WorkPlace = styled.section`
   border-bottom: 2px solid #EBEAED;
 `
 export const WorkPlaceTitle = styled.h4`
-  font-size: 20px;
+  font-size: clamp(14px, 5vw, 20px);
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: clamp(18px, 5vw, 28px);
   letter-spacing: 1px;
 `
 
@@ -44,10 +44,10 @@ export const WorkPlaceInfo = styled.div`
   display: flex;
   justify-content: space-between;
   font-family: Poppins, serif;
-  font-size: 12px;
+  font-size: clamp(10px, 5vw, 12px);
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: clamp(14px, 5vw, 28px);
   letter-spacing: 1px;
   gap: 30px;
 
@@ -71,7 +71,7 @@ export const FirstLinetWorkInfo = styled.div`
     font-size: 9px;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px;
+    line-height: clamp(14px, 5vw, 26px);
     text-align: center;
   }
 `
@@ -99,4 +99,13 @@ export const DateInfo = styled.div`
   justify-content: center;
   align-items: center;
   gap: 4px;
+
+  & p {
+    font-family: Poppins, serif;
+    font-size: clamp(10px, 5vw, 12px);
+    line-height: clamp(14px, 5vw, 28px);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
 `

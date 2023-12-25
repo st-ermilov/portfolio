@@ -19,7 +19,7 @@ function TechStack() {
                 {isMobile
 
                     ? skills.map((skill, index) => (
-                        <SkillIcon width={'60px'} height={'60px'} key={index} iconId={skill}/>))
+                        <SkillIcon width={'80px'} height={'80px'} key={index} iconId={skill}/>))
 
                     : skills.map((skill, index) => (
                         <SkillIcon key={index} iconId={skill}/>))
