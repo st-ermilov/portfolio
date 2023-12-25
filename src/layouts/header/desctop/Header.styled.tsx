@@ -43,6 +43,13 @@ export const NavLinksBarStyled = styled.div<NavLinksBarStyledProps>`
 export const NavLink = styled(Link)`
   margin-right: 20px;
   text-align: center;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
   @media (max-width: 690px) {
     margin: 0;
   }

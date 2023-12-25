@@ -5,6 +5,11 @@ export const ProjectCardContainer = styled.div`
   border-radius: 20px;
   background: #FFF;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+  transition: all 400ms ease-in-out;
+
+  &:hover {
+    animation: rotateCard 2s ease-in-out forwards;
+  }
 
   & img {
     width: 100%;
@@ -48,6 +53,15 @@ export const ProjectCardContainer = styled.div`
     line-height: 26px;
     margin-bottom: 21px;
   }
+
+  @keyframes rotateCard {
+    from {
+      transform: rotateY(0deg) scale(1);
+    }
+    to {
+      transform: rotateY(360deg) scale(1.1);
+    }
+
 `
 
 export const TextContent = styled.div`
