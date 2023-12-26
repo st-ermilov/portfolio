@@ -25,12 +25,17 @@ export const WorkExperience = styled.section`
 
 export const WorkPlace = styled.section`
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 26px;
   margin-bottom: 30px;
   border-bottom: 2px solid #EBEAED;
+
+  @media (max-width: 690px) {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
 `
 export const WorkPlaceTitle = styled.h4`
   font-size: clamp(14px, 5vw, 20px);
@@ -54,12 +59,47 @@ export const WorkPlaceInfo = styled.div`
   & img {
     margin-right: 5px;
   }
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
 `
-export const FirstLinetWorkInfo = styled.div`
-  width: 100%;
+
+export const FirstPartWorkInfo = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  & h4 {
+    margin-bottom: 11px;
+  }
+`
+export const Place = styled.div`
+  display: flex;
+  justify-content: start;
   align-items: center;
+
+  & p {
+    font-family: Poppins, serif;
+    font-size: clamp(10px, 5vw, 12px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: clamp(14px, 5vw, 28px);
+  }
+`
+export const Location = styled.div`
+  display: flex;
+  justify-content: start;
+  align-items: center;
+`
+
+export const SecondPartWorkInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
 
   & span {
     width: 90px;
@@ -74,26 +114,18 @@ export const FirstLinetWorkInfo = styled.div`
     line-height: clamp(14px, 5vw, 26px);
     text-align: center;
   }
-`
-export const Place = styled.div`
-  display: flex;
-`
-export const Location = styled.div`
-  display: flex;
-`
-export const SecondLineWorkInfo = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
-
+  @media (max-width: 690px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
 `
 export const Education = styled(WorkExperience)`
 
 `
-
-
 export const DateInfo = styled.div`
   display: flex;
   justify-content: center;
@@ -107,5 +139,9 @@ export const DateInfo = styled.div`
     font-style: normal;
     font-weight: 500;
     letter-spacing: 1px;
+  }
+
+  @media (max-width: 580px) {
+    padding-left: 2px;
   }
 `

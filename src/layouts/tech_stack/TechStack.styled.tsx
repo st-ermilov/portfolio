@@ -10,10 +10,11 @@ export const TechStackContainer = styled.section`
   & p {
     text-align: center;
     font-family: Poppins, serif;
-    font-size: 32px;
+    font-size: clamp(14px, 5vw, 32px);
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
   }
 
   @media (max-width: 1024px) {
@@ -40,5 +41,6 @@ export const SkillsContainer = styled.div`
   }
   @media (max-width: 550px) {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
   }
 `

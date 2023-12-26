@@ -7,9 +7,6 @@ export const ProjectCardContainer = styled.div`
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
   transition: all 400ms ease-in-out;
 
-  &:hover {
-    animation: rotateCard 2s ease-in-out forwards;
-  }
 
   & img {
     width: 100%;
@@ -29,7 +26,7 @@ export const ProjectCardContainer = styled.div`
   & h3 {
     text-align: center;
     font-family: Poppins, serif;
-    font-size: 28px;
+    font-size: clamp(20px, 5vw, 28px);
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
@@ -54,13 +51,20 @@ export const ProjectCardContainer = styled.div`
     margin-bottom: 21px;
   }
 
-  @keyframes rotateCard {
-    from {
-      transform: rotateY(0deg) scale(1);
+  @media (min-width: 1024px) {
+    &:hover {
+      animation: rotateCard 2s ease-in-out forwards;
     }
-    to {
-      transform: rotateY(360deg) scale(1.1);
-    }
+  }
+}
+
+@keyframes rotateCard {
+  from {
+    transform: rotateY(0deg) scale(1);
+  }
+  to {
+    transform: rotateY(360deg) scale(1.1);
+  }
 
 `
 

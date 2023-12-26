@@ -4,10 +4,10 @@ import {
     AboutSection,
     DateInfo,
     Education,
-    FirstLinetWorkInfo,
+    FirstPartWorkInfo,
     Location,
     Place,
-    SecondLineWorkInfo,
+    SecondPartWorkInfo,
     WorkExperience,
     WorkPlace,
     WorkPlaceInfo,
@@ -27,13 +27,9 @@ function About() {
             </AboutSection>
             <WorkExperience>
                 <Title>Work Experience</Title>
-
                 <WorkPlace>
-                    <FirstLinetWorkInfo>
+                    <FirstPartWorkInfo>
                         <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
-                        <span>Internship</span>
-                    </FirstLinetWorkInfo>
-                    <SecondLineWorkInfo>
                         <WorkPlaceInfo>
                             <Place>
                                 <Icon iconId={'office_icon'}/>
@@ -44,21 +40,21 @@ function About() {
                                 <p>Rostov-on-Don</p>
                             </Location>
                         </WorkPlaceInfo>
+                    </FirstPartWorkInfo>
+                    <SecondPartWorkInfo>
+                        <span>Internship</span>
                         <DateInfo>
                             <Icon iconId={'calendar_icon'}/>
                             <p>Nov 2022 - Dec 2023</p>
                         </DateInfo>
-                    </SecondLineWorkInfo>
+                    </SecondPartWorkInfo>
                 </WorkPlace>
             </WorkExperience>
             <Education>
                 <Title>Education</Title>
                 <WorkPlace>
-                    <FirstLinetWorkInfo>
+                    <FirstPartWorkInfo>
                         <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
-                        <span>Internship</span>
-                    </FirstLinetWorkInfo>
-                    <SecondLineWorkInfo>
                         <WorkPlaceInfo>
                             <Place>
                                 <Icon iconId={'office_icon'}/>
@@ -69,18 +65,18 @@ function About() {
                                 <p>Rostov-on-Don</p>
                             </Location>
                         </WorkPlaceInfo>
+                    </FirstPartWorkInfo>
+                    <SecondPartWorkInfo>
+                        <span>Internship</span>
                         <DateInfo>
                             <Icon iconId={'calendar_icon'}/>
                             <p>Dec 2023 - now</p>
                         </DateInfo>
-                    </SecondLineWorkInfo>
+                    </SecondPartWorkInfo>
                 </WorkPlace>
                 <WorkPlace>
-                    <FirstLinetWorkInfo>
+                    <FirstPartWorkInfo>
                         <WorkPlaceTitle>Ph.D. of Medical Sciences</WorkPlaceTitle>
-                        <span>FullTime</span>
-                    </FirstLinetWorkInfo>
-                    <SecondLineWorkInfo>
                         <WorkPlaceInfo>
                             <Place>
                                 <Icon iconId={'office_icon'}/>
@@ -91,13 +87,15 @@ function About() {
                                 <p>Donetsk</p>
                             </Location>
                         </WorkPlaceInfo>
+                    </FirstPartWorkInfo>
+                    <SecondPartWorkInfo>
+                        <span>FullTime</span>
                         <DateInfo>
                             <Icon iconId={'calendar_icon'}/>
                             <p>Sep 2009 - Jun 2015</p>
                         </DateInfo>
-                    </SecondLineWorkInfo>
+                    </SecondPartWorkInfo>
                 </WorkPlace>
-
             </Education>
         </AboutContainer>
     )

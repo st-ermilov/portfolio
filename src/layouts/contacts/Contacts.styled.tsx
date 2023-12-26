@@ -16,4 +16,8 @@ export const ContactsContainer = styled.section`
     letter-spacing: -1px;
     color: #221be4;
   }
+
+  @media (max-width: 425px) {
+    margin: 40px 0 60px 0;
+  }
 `
