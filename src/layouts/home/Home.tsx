@@ -1,6 +1,6 @@
 import React from 'react';
 import {Greetings, HomeContainer, MyPhoto} from "./Home.styled";
-import photo from '../../styles/assets/my_photo.png'
+import photo from '../../styles/assets/my_photo.webp'
 
 
 function Home() {

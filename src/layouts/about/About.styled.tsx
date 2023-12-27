@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+
+export const CommonContainer = styled.section`
+  display: flex;
+`
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -143,5 +147,20 @@ export const DateInfo = styled.div`
 
   @media (max-width: 580px) {
     padding-left: 2px;
+  }
+
+`
+export const ImageStyled = styled.img`
+  width: 834.658px;
+  height: 834.655px;
+  margin-top: -10%;
+  margin-right: -5%;
+
+  @media (max-width: 768px) {
+    width: 500px;
+    height: 500px;
+  }
+  @media (max-width: 550px) {
+    display: none;
   }
 `

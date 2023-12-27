@@ -37,6 +37,7 @@ export const NavLinksBarStyled = styled.div<NavLinksBarStyledProps>`
     flex-direction: ${props => props.flexDirection || 'column'};
     gap: 20px;
     justify-content: start;
+    padding-top: 70px;
   }
 `
 

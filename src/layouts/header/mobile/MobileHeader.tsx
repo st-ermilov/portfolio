@@ -41,9 +41,13 @@ function MobileHeader() {
                         ))}
                     </NavLinksBarStyled>
                     <SocialMediaBarStyled>
-                        <SocialMediaLink><Icon iconId={'github_icon'}/></SocialMediaLink>
-                        <SocialMediaLink><Icon iconId={'telegram_icon'}/></SocialMediaLink>
-                        <SocialMediaLink> <Icon iconId={'whatsapp_icon'}/></SocialMediaLink>
+                        <SocialMediaLink><a href="https://github.com/st-ermilov" target={'_blank'}><Icon
+                            iconId={'github_icon'}/></a></SocialMediaLink>
+                        <SocialMediaLink><a href="https://t.me/st_erm" target={'_blank'}><Icon
+                            iconId={'telegram_icon'}/></a></SocialMediaLink>
+                        <SocialMediaLink><a href="https://wa.me/+79188956832" target={'_blank'}><Icon
+                            iconId={'whatsapp_icon'}/></a>
+                        </SocialMediaLink>
                     </SocialMediaBarStyled>
                 </MenuStyled>
             </HeaderStyled>

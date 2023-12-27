@@ -7,7 +7,7 @@ export const MenuStyled = styled.div<MenuStyledPropsType>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 50px;
   background-color: white;
   width: 100%;
