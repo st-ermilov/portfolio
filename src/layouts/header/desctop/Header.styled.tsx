@@ -47,8 +47,10 @@ export const NavLink = styled(Link)`
   transition: all 400ms ease-in-out;
   cursor: pointer;
 
-  &:hover {
-    transform: scale(1.2);
+  @media (min-width: 1024px) {
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   @media (max-width: 690px) {
@@ -63,5 +65,10 @@ export const SocialMediaBarStyled = styled.section`
 `
 
 export const SocialMediaLink = styled.a`
-
+  transition: all 400ms ease-in-out;
+  @media (min-width: 1024px) {
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
 `

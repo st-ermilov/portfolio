@@ -9,6 +9,7 @@ import img4 from '../../styles/assets/Project_4.png'
 import img5 from '../../styles/assets/Project_5.png'
 import img6 from '../../styles/assets/Project_6.png'
 import ProjectCard from "../../components/project_card/ProjectCard";
+import {Fade} from "react-awesome-reveal";
 
 
 const myProjects = [
@@ -68,10 +69,11 @@ function Projects() {
             <Title textAlign={'center'}>Projects</Title>
             <p>Things I’ve built so far</p>
             <ProjectCardContainerStyled>
-                {myProjects.map((project, index) => (
-                    <ProjectCard key={index} image={project.image} title={project.title} text={project.text}
-                                 techStack={project.techStack} preview={project.preview}
-                                 viewCode={project.viewCode}/>))}
+                <Fade cascade={true} damping={0.1}>
+                    {myProjects.map((project, index) => (
+                        <ProjectCard key={index} image={project.image} title={project.title} text={project.text}
+                                     techStack={project.techStack} preview={project.preview}
+                                     viewCode={project.viewCode}/>))}</Fade>
             </ProjectCardContainerStyled>
 
         </ProjectsContainer>

@@ -53,17 +53,8 @@ export const ProjectCardContainer = styled.div`
 
   @media (min-width: 1024px) {
     &:hover {
-      animation: rotateCard 2s ease-in-out forwards;
+      transform: scale(1.1);
     }
-  }
-}
-
-@keyframes rotateCard {
-  from {
-    transform: rotateY(0deg) scale(1);
-  }
-  to {
-    transform: rotateY(360deg) scale(1.1);
   }
 
 `
