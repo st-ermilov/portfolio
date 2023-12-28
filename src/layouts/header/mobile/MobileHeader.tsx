@@ -21,7 +21,7 @@ function MobileHeader() {
             <HeaderStyled position={'sticky'}>
                 <NavBarStyled>
                     <Icon iconId={"logo"} height={'60px'} width={'100px'}/>
-                    <Icon iconId={'menu'} height={'40px'} width={'40px'} onClick={() => {
+                    <Icon iconId={isOpen ? 'menu' : 'close_icon'} height={'40px'} width={'40px'} onClick={() => {
                         setIsOpen(!isOpen)
                     }}/>
                 </NavBarStyled>

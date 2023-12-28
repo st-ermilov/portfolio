@@ -20,4 +20,5 @@ function Icon(props: IconPropsType) {
     );
 }
 
+
 export default Icon;
