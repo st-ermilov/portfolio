@@ -5,9 +5,9 @@ import SkillIcon from "../../components/icon/SkillIcon";
 import {useMediaQuery} from "react-responsive";
 import {Fade} from "react-awesome-reveal";
 
-const skills = ['HTML_skill', 'CSS_skill', 'JS_skill', 'React_skill',
+const skills = ['HTML_skill', 'CSS_skill', 'JS_skill', 'TS_skill', 'React_skill',
     'Redux_skill', 'Bootstrap_skill', 'Tailwind_skill', 'SASS_skill', 'Git_skill',
-    'Greensock_skill', 'VScode_skill', 'Github_skill',]
+    'VScode_skill', 'Github_skill',]
 
 function TechStack() {
     const isMobile = useMediaQuery({query: '(max-width: 690px)'})
