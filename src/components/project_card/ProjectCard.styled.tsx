@@ -6,12 +6,9 @@ export const ProjectCardContainer = styled.div`
   background: #FFF;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
   transition: all 400ms ease-in-out;
-
-
-  & img {
-    width: 100%;
-    height: 260px;
-  }
+  
+  
+  
 
   & p {
     font-family: Poppins, serif;
@@ -21,6 +18,7 @@ export const ProjectCardContainer = styled.div`
     line-height: 26px;
     margin: 17px 0 12px 0;
     text-align: start;
+    min-height: 156px;
   }
 
   & h3 {
@@ -57,6 +55,17 @@ export const ProjectCardContainer = styled.div`
     }
   }
 
+`
+
+export const ProjectCardImageContainer = styled.div`
+  width: 100%;
+  height: 260px;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+  }
 `
 
 export const TextContent = styled.div`

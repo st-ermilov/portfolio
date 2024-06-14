@@ -9,7 +9,7 @@ function Contacts() {
         <Fade>
             <ContactsContainer id={'contacts'}>
                 <Title textAlign={'center'}>For any questions please mail me:</Title>
-                <a href={'mailto:st_erm@gmail.com'}>st_erm@gmail.com</a>
+                <a href={'mailto:stanislav_ermilov@rambler.ru'}>E-mail</a>
             </ContactsContainer>
         </Fade>
     );

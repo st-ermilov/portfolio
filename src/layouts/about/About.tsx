@@ -27,13 +27,14 @@ function About() {
                 <AboutContainer id={'about'}>
                     <AboutSection>
                         <Title>About Me</Title>
-                        <p>The Generator App is an online tool that helps you to export ready-made templates ready to
-                            work
-                            as
-                            your future website. It helps you to combine slides, panels and other components and export
-                            it
-                            as a
-                            set of static files: HTML/CSS/JS.</p>
+                        <p>Until recently, my whole life was connected with medicine - I graduated from medical
+                            university, got a PhD in medicine, I teach students my subject - “Urology”. At the same
+                            time, I work as an operating urologist. </p>
+                        <p>About 2 years ago I became interested in web
+                            development, I started to study this direction from YouTube videos. Gradually I was
+                            fascinated by it, in addition to HTML and CSS I learned JavaScript, mastered React, Git and
+                            many other technologies. And I was so fascinated by web development that I wanted to change
+                            my profession and become a Frontend developer. Let's get started...)</p>
                     </AboutSection>
                     <WorkExperience>
                         <Title>Work Experience</Title>
@@ -102,7 +103,7 @@ function About() {
                                 <span>FullTime</span>
                                 <DateInfo>
                                     <Icon iconId={'calendar_icon'}/>
-                                    <p>Sep 2009 - Jun 2015</p>
+                                    <p>Sep 2015 - now</p>
                                 </DateInfo>
                             </SecondPartWorkInfo>
                         </WorkPlace>

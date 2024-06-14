@@ -1,5 +1,11 @@
 import React from 'react';
-import {LinkStyled, ProjectCardContainer, ProjectLinkContainer, TextContent} from "./ProjectCard.styled";
+import {
+    LinkStyled,
+    ProjectCardContainer,
+    ProjectCardImageContainer,
+    ProjectLinkContainer,
+    TextContent
+} from "./ProjectCard.styled";
 import Icon from "../icon/Icon";
 
 type ProjectCardPropsType = {
@@ -14,7 +20,9 @@ type ProjectCardPropsType = {
 function ProjectCard(props: ProjectCardPropsType) {
     return (
         <ProjectCardContainer>
-            <img src={props.image} alt="project photo"/>
+            <ProjectCardImageContainer>
+                <img src={props.image} alt="project photo"/>
+            </ProjectCardImageContainer>
             <TextContent>
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>

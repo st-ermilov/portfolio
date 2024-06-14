@@ -15,51 +15,51 @@ import {Fade} from "react-awesome-reveal";
 const myProjects = [
     {
         image: img1,
-        title: 'Project Tile goes here',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        title: 'TODO-list',
+        text: 'A list of tasks, with the possibility of user authorization, and as a consequence with individual data. Data are stored on the server, interaction with them is performed via custome API.',
+        techStack: 'React, TypeScript, Redux Toolkit, HTML5, CSS3, MaterialUI',
+        preview: 'https://st-ermilov.github.io/todo_finally/#/login',
+        viewCode: 'https://github.com/st-ermilov/todo_finally'
     },
     {
         image: img2,
-        title: 'Project Tile goes here',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        title: '3-in-1 app',
+        text: 'A more mobile-focused app that combines a todo list, currency converter and weather application',
+        techStack: 'React, TypeScript, Redux Toolkit, HTML5, SCSS',
+        preview: 'https://3-in-1-react.vercel.app/#/weather',
+        viewCode: 'https://github.com/st-ermilov/3-in-1-react'
     },
     {
         image: img3,
-        title: 'Project Tile goes here',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        title: 'Pizzeria Website',
+        text: 'Sports supplements website layout.',
+        techStack: 'React, TypeScript, Redux Toolkit, HTML5, SCSS',
+        preview: 'https://pizza-react-daoz2a931-stermilovs-projects.vercel.app/?page=1&limit=4&sortBy=rating&order=asc',
+        viewCode: 'https://github.com/st-ermilov/pizza-react'
     },
     {
         image: img4,
-        title: 'Project Tile goes here',
+        title: 'PrimeLabs - layouts',
         text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        techStack: 'HTML5, CSS3 , JavaScript, JavaScript-libraries',
+        preview: 'https://st-ermilov.github.io/prime_labs_layout/',
+        viewCode: 'https://github.com/st-ermilov/prime_labs_layout'
     },
     {
         image: img5,
-        title: 'Project Tile goes here',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        title: 'Hackathon Maze',
+        text: 'A maze game made as part of a charity hackathon. There are levels of difficulty, there is a possibility to include a hint.',
+        techStack: 'React, TypeScript, Redux Toolkit, HTML5, CSS3',
+        preview: 'https://hackathon-team-10.vercel.app',
+        viewCode: 'https://github.com/lgklsv/hackathon-team-10'
     },
     {
         image: img6,
-        title: 'Project Tile goes here',
-        text: 'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
-        techStack: 'HTML , JavaScript, SASS, React',
-        preview: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp',
-        viewCode: 'https://www.w3schools.com/howto/howto_css_sticky_element.asp'
+        title: 'My portfolio',
+        text: 'A portfolio site with examples of my work - both on source code and live samples',
+        techStack: 'React, JavaScript, Styled Components',
+        preview: 'https://portfolio-st-ermilov.vercel.app/',
+        viewCode: 'https://github.com/st-ermilov/portfolio'
     }
 ]
 
