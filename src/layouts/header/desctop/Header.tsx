@@ -1,5 +1,5 @@
 import {
-    HeaderStyled,
+    HeaderStyled, LanguagesButtons,
     NavBarStyled,
     NavLink,
     NavLinksBarStyled,
@@ -8,13 +8,17 @@ import {
 } from "./Header.styled";
 import React from "react";
 import Icon from "../../../components/icon/Icon";
+import ru from '../../../languages/ru.json'
+import en from '../../../languages/en.json'
+import {useLanguage} from "../../../App";
+import RU from '../../../styles/assets/RU.svg'
+import EN from '../../../styles/assets/EN.svg'
 
 
-export const navLinks = ['Home', 'About', 'Tech Stack', 'Projects', 'Contacts']
 export const anchorLinks = ['home', 'about', 'tech_stack', 'projects', 'contacts']
 
-
 function Header() {
+    const {language, setLanguage} = useLanguage()
     return (
         <HeaderStyled position={'sticky'}>
             <NavBarStyled>
@@ -25,9 +29,19 @@ function Header() {
                     offset={-100}
                     duration={800}
                 ><Icon iconId={"logo"} height={'60px'} width={'100px'}/></NavLink>
-
+                <LanguagesButtons>
+                    <button onClick={() => setLanguage("ru")}><img src={RU}/></button>
+                    <button onClick={() => setLanguage("en")}><img src={EN}/></button>
+                </LanguagesButtons>
                 <NavLinksBarStyled>
-                    {navLinks.map((link, index) => (<NavLink
+                    { language === 'en' ? en.menu.map((link, index) => (<NavLink
+                            to={anchorLinks[index]}
+                            spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={800}
+                            key={index}>{link}</NavLink>
+                    )) : ru.menu.map((link, index) => (<NavLink
                             to={anchorLinks[index]}
                             spy={true}
                             smooth={true}

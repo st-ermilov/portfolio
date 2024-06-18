@@ -12,7 +12,7 @@ export const HomeContainer = styled.section`
   }
 `
 export const Greetings = styled.h1`
-  font-family: Poppins, serif;
+  font-family: Roboto, serif;
   font-size: clamp(30px, 5vw, 52px);
   font-style: normal;
   font-weight: 700;

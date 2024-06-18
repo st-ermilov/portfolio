@@ -5,7 +5,7 @@ type TitlePropsType = {
     textAlign?: string
 }
 export const Title = styled.h3<TitlePropsType>`
-  font-family: Poppins, serif;
+  font-family: Roboto, serif;
   font-size: clamp(20px, 5vw, 42px);
   font-style: normal;
   font-weight: 700;

@@ -9,22 +9,25 @@ import {
     SocialMediaLink
 } from "../header/desctop/Header.styled";
 import {useMediaQuery} from "react-responsive";
+import ru from '../../languages/ru.json'
+import en from '../../languages/en.json'
+import {useLanguage} from "../../App";
 
 
-const navLinks = ['Home', 'About', 'Tech Stack', 'Projects', 'Contacts']
+
 const anchorLinks = ['home', 'about', 'tech_stack', 'projects', 'contacts']
 
 function Footer() {
     const isTablet = useMediaQuery({query: '(max-width: 875px)'})
     const isMobile = useMediaQuery({query: '(max-width: 690px)'})
+    const {language} = useLanguage()
 
     return (
         <FooterContainer>
             <FooterFirstLine>
                 <Icon iconId={'logo'} height={'60px'} width={'100px'}/>
                 <FirstLineContacts>
-                    <p>+91 12345 09876</p>
-                    <p>info@example.com</p>
+                    <p>+79188956832</p>
                     <SocialMediaBarStyled>
                         <SocialMediaLink><a href="https://github.com/st-ermilov" target={'_blank'}><Icon
                             iconId={'github_icon'}/></a></SocialMediaLink>
@@ -39,14 +42,23 @@ function Footer() {
             <FooterSecondLine>
                 <NavBarStyled justifyContent={isTablet && 'center'}>
                     <NavLinksBarStyled flexDirection={isMobile && 'column'}>
-                        {navLinks.map((link, index) => (<NavLink
-                                to={anchorLinks[index]}
-                                spy={true}
-                                smooth={true}
-                                offset={-100}
-                                duration={800}
-                                key={index}>{link}</NavLink>
-                        ))}
+                        {language === 'en'
+                            ? en.menu.map((link, index) => (<NavLink
+                                    to={anchorLinks[index]}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={800}
+                                    key={index}>{link}</NavLink>
+                            ))
+                            : ru.menu.map((link, index) => (<NavLink
+                                    to={anchorLinks[index]}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
+                                    duration={800}
+                                    key={index}>{link}</NavLink>
+                            ))}
                     </NavLinksBarStyled>
                 </NavBarStyled>
                 <DesignBy>

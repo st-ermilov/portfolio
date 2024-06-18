@@ -33,7 +33,7 @@ export const FirstLineContacts = styled.div`
 
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -54,7 +54,7 @@ export const FooterSecondLine = styled.div`
 
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

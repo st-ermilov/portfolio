@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.section`
 
   & p {
     text-align: center;
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(14px, 5vw, 32px);
     font-style: normal;
     font-weight: 400;

@@ -1,0 +1,9 @@
+{
+  "menu":
+    ["Home", "About", "Tech Stack", "Projects", "Contacts"],
+  "about": [
+    "Until recently, my whole professional life was connected with medicine - I graduated from medical university and slowly but steadily achieved my goal to become a surgeon. Afterwards, on the basis of the practical experience gained in the operating room, I acquired a PhD degree, in order to share my experience with students, while continuing being a surgeon.",
+    "About 2 years ago my family encouraged me to try web developments as a tool to take a break from a daily (and mentally challenging) medicine routine. To my surprise, web development quickly became my obsession. Using open sources, I picked up HTML, CSS, JavaScript and React, Git as well as other techniques required to become a competent  Frontend developer. In order to deepen my knowledge, study at IT-incubator.io was also completed.",
+    "After all this time which I`ve spent on mastering new skills, I finally realised that web development is not something that I want to be a mere pet project of my leisure time - it`s what I want  (and most importantly can) do for a living. It is a fascinating journey and I`m exited to share what I`ve accomplished so far."
+  ]
+}

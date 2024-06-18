@@ -11,7 +11,7 @@ export const ProjectCardContainer = styled.div`
   
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -23,7 +23,7 @@ export const ProjectCardContainer = styled.div`
 
   & h3 {
     text-align: center;
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(20px, 5vw, 28px);
     font-style: normal;
     font-weight: 500;
@@ -32,7 +32,7 @@ export const ProjectCardContainer = styled.div`
   }
 
   & span {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +41,7 @@ export const ProjectCardContainer = styled.div`
   }
 
   & i {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;

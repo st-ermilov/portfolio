@@ -14,4 +14,13 @@ export const MenuStyled = styled.div<MenuStyledPropsType>`
   height: ${props => props.height || '0'};
   transition: all 400ms ease-in-out;
   overflow: hidden;
+   & img {
+     width: 20px;
+   }
+  & button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
 `

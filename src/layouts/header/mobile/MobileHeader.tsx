@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    HeaderStyled,
+    HeaderStyled, LanguagesButtons,
     NavBarStyled,
     NavLink,
     NavLinksBarStyled,
@@ -8,14 +8,20 @@ import {
     SocialMediaLink
 } from "../desctop/Header.styled";
 import Icon from "../../../components/icon/Icon";
-import {anchorLinks, navLinks} from "../desctop/Header";
+import {anchorLinks} from "../desctop/Header";
 import {MenuStyled} from "./MobileHeaderStyled";
 import {MyThemeProvider} from "../../../styles/GlobalStyles";
+import ru from '../../../languages/ru.json'
+import en from '../../../languages/en.json'
+import {useLanguage} from "../../../App";
+import RU from "../../../styles/assets/RU.svg";
+import EN from "../../../styles/assets/EN.svg";
 
 function MobileHeader() {
 
     const [isOpen, setIsOpen] = React.useState(true)
 
+    const {language, setLanguage} = useLanguage()
     return (
         <MyThemeProvider overFlow={!isOpen ? 'hidden' : ''}>
             <HeaderStyled position={'sticky'}>
@@ -27,7 +33,7 @@ function MobileHeader() {
                 </NavBarStyled>
                 <MenuStyled height={isOpen ? '0px' : '100vh'}>
                     <NavLinksBarStyled flexDirection={'column'}>
-                        {navLinks.map((link, index) => (<NavLink
+                        {language === 'en' ? en.menu.map((link, index) => (<NavLink
                                 to={anchorLinks[index]}
                                 spy={true}
                                 smooth={true}
@@ -38,7 +44,19 @@ function MobileHeader() {
                                     setIsOpen(!isOpen)
                                 }}
                             >{link}</NavLink>
-                        ))}
+                        )) : ru.menu.map((link, index) => (<NavLink
+                                to={anchorLinks[index]}
+                                spy={true}
+                                smooth={true}
+                                offset={-100}
+                                duration={800}
+                                key={index}
+                                onClick={() => {
+                                    setIsOpen(!isOpen)
+                                }}
+                            >{link}</NavLink>
+                        ))
+                        }
                     </NavLinksBarStyled>
                     <SocialMediaBarStyled>
                         <SocialMediaLink><a href="https://github.com/st-ermilov" target={'_blank'}><Icon
@@ -49,6 +67,16 @@ function MobileHeader() {
                             iconId={'whatsapp_icon'}/></a>
                         </SocialMediaLink>
                     </SocialMediaBarStyled>
+                    <LanguagesButtons>
+                        <button onClick={() => {
+                            setLanguage("ru")
+                            setIsOpen(!isOpen)
+                        }}><img src={RU}/></button>
+                        <button onClick={() => {
+                            setLanguage("en")
+                            setIsOpen(!isOpen)
+                        }}><img src={EN}/></button>
+                    </LanguagesButtons>
                 </MenuStyled>
             </HeaderStyled>
         </MyThemeProvider>

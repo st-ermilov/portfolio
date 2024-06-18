@@ -14,11 +14,17 @@ export const AboutSection = styled.section`
   max-width: 710px;
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(12px, 5vw, 18px);
     font-style: normal;
     font-weight: 400;
     line-height: clamp(16px, 5vw, 26px);
+    margin-bottom: 10px;
+  }
+  
+  & a{
+    color: black;
+
   }
 `
 export const WorkExperience = styled.section`
@@ -52,7 +58,7 @@ export const WorkPlaceTitle = styled.h4`
 export const WorkPlaceInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  font-family: Poppins, serif;
+  font-family: Roboto, serif;
   font-size: clamp(10px, 5vw, 12px);
   font-style: normal;
   font-weight: 500;
@@ -86,7 +92,7 @@ export const Place = styled.div`
   align-items: center;
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(10px, 5vw, 12px);
     font-style: normal;
     font-weight: 500;
@@ -111,7 +117,7 @@ export const SecondPartWorkInfo = styled.div`
     background: #D7FFE0;
     color: #018C0F;
     border-radius: 20px;
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: 9px;
     font-style: normal;
     font-weight: 600;
@@ -137,7 +143,7 @@ export const DateInfo = styled.div`
   gap: 4px;
 
   & p {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(10px, 5vw, 12px);
     line-height: clamp(14px, 5vw, 28px);
     font-style: normal;

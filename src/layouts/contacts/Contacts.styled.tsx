@@ -8,7 +8,7 @@ export const ContactsContainer = styled.section`
   justify-content: center;
 
   & a {
-    font-family: Poppins, serif;
+    font-family: Roboto, serif;
     font-size: clamp(18px, 5vw, 38px);
     font-style: normal;
     font-weight: 700;

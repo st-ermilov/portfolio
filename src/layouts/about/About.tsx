@@ -19,28 +19,34 @@ import Icon from "../../components/icon/Icon";
 import {Title} from '../../components/title/Title.styled'
 import img from '../../styles/assets/drawing.svg'
 import {Fade} from "react-awesome-reveal";
+import {useLanguage} from "../../App";
+import ru from '../../languages/ru.json'
+import en from '../../languages/en.json'
 
 function About() {
+    const {language} = useLanguage()
+
     return (
         <Fade damping={0.1}>
             <CommonContainer>
                 <AboutContainer id={'about'}>
                     <AboutSection>
-                        <Title>About Me</Title>
-                        <p>Until recently, my whole life was connected with medicine - I graduated from medical
-                            university, got a PhD in medicine, I teach students my subject - “Urology”. At the same
-                            time, I work as an operating urologist. </p>
-                        <p>About 2 years ago I became interested in web
-                            development, I started to study this direction from YouTube videos. Gradually I was
-                            fascinated by it, in addition to HTML and CSS I learned JavaScript, mastered React, Git and
-                            many other technologies. And I was so fascinated by web development that I wanted to change
-                            my profession and become a Frontend developer. Let's get started...)</p>
+                        {language === 'en'
+                            ? <Title>About Me</Title>
+                            : <Title>Обо мне</Title>}
+                        {language === 'en'
+                            ? en.about.map((el, index) => (<p key={index}>{el}</p>))
+                            : ru.about.map((el, index) => (<p key={index}>{el}</p>))}
                     </AboutSection>
                     <WorkExperience>
-                        <Title>Work Experience</Title>
+                        {language === 'en'
+                            ? <Title>Work Experience</Title>
+                            : <Title>Опыт работы</Title>}
                         <WorkPlace>
                             <FirstPartWorkInfo>
-                                <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
+                                {language === 'en'
+                                    ? <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
+                                    : <WorkPlaceTitle>Веб-разработчик (стажёр)</WorkPlaceTitle>}
                                 <WorkPlaceInfo>
                                     <Place>
                                         <Icon iconId={'office_icon'}/>
@@ -48,24 +54,35 @@ function About() {
                                     </Place>
                                     <Location>
                                         <Icon iconId={'location_icon'}/>
-                                        <p>Rostov-on-Don</p>
+                                        {language === 'en'
+                                            ? <p>Rostov-on-Don</p>
+                                            : <p>Ростов-на-Дону</p>}
                                     </Location>
                                 </WorkPlaceInfo>
                             </FirstPartWorkInfo>
                             <SecondPartWorkInfo>
-                                <span>Internship</span>
+                                {language === 'en'
+                                    ? <span>Internship</span>
+                                    : <span>Стажировка</span>}
                                 <DateInfo>
                                     <Icon iconId={'calendar_icon'}/>
-                                    <p>Nov 2022 - Dec 2023</p>
+                                    {language === 'en'
+                                        ?   <p>Nov 2022 - Dec 2023</p>
+                                        :   <p>Нояб 2022 - Дек 2023</p>}
+
                                 </DateInfo>
                             </SecondPartWorkInfo>
                         </WorkPlace>
                     </WorkExperience>
                     <Education>
-                        <Title>Education</Title>
+                        {language === 'en'
+                            ?   <Title>Education</Title>
+                            :   <Title>Образование</Title>}
                         <WorkPlace>
                             <FirstPartWorkInfo>
-                                <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
+                                {language === 'en'
+                                    ? <WorkPlaceTitle>Web Development Intern</WorkPlaceTitle>
+                                    : <WorkPlaceTitle>Веб-разработчик (стажёр)</WorkPlaceTitle>}
                                 <WorkPlaceInfo>
                                     <Place>
                                         <Icon iconId={'office_icon'}/>
@@ -73,37 +90,53 @@ function About() {
                                     </Place>
                                     <Location>
                                         <Icon iconId={'location_icon'}/>
-                                        <p>Rostov-on-Don</p>
+                                        {language === 'en'
+                                            ? <p>Rostov-on-Don</p>
+                                            : <p>Ростов-на-Дону</p>}
                                     </Location>
                                 </WorkPlaceInfo>
                             </FirstPartWorkInfo>
                             <SecondPartWorkInfo>
-                                <span>Internship</span>
+                                {language === 'en'
+                                    ? <span>Internship</span>
+                                    : <span>Стажировка</span>}
                                 <DateInfo>
                                     <Icon iconId={'calendar_icon'}/>
-                                    <p>Dec 2023 - now</p>
+                                    {language === 'en'
+                                        ? <p>Dec 2023 - now</p>
+                                        : <p>Дек 2023 - н.в.</p>}
                                 </DateInfo>
                             </SecondPartWorkInfo>
                         </WorkPlace>
                         <WorkPlace>
                             <FirstPartWorkInfo>
-                                <WorkPlaceTitle>Ph.D. of Medical Sciences</WorkPlaceTitle>
+                                {language === 'en'
+                                    ? <WorkPlaceTitle>Ph.D. of Medical Sciences</WorkPlaceTitle>
+                                    : <WorkPlaceTitle>К.м.н., доцент каф. урологии</WorkPlaceTitle>}
                                 <WorkPlaceInfo>
                                     <Place>
                                         <Icon iconId={'office_icon'}/>
-                                        <p>DonNMU named after M.Gorky</p>
+                                        {language === 'en'
+                                            ? <p>DonGMU named after M.Gorky</p>
+                                            : <p>ДонГМУ им. М.Горького</p>}
                                     </Place>
                                     <Location>
                                         <Icon iconId={'location_icon'}/>
-                                        <p>Donetsk</p>
+                                        {language === 'en'
+                                            ? <p>Donetsk</p>
+                                            : <p>Донецк</p>}
                                     </Location>
                                 </WorkPlaceInfo>
                             </FirstPartWorkInfo>
                             <SecondPartWorkInfo>
-                                <span>FullTime</span>
+                                {language === 'en'
+                                    ? <span>FullTime</span>
+                                    : <span>Работа</span>}
                                 <DateInfo>
                                     <Icon iconId={'calendar_icon'}/>
-                                    <p>Sep 2015 - now</p>
+                                    {language === 'en'
+                                        ? <p>Sep 2015 - now</p>
+                                        : <p>Сен 2015 - н.в.</p>}
                                 </DateInfo>
                             </SecondPartWorkInfo>
                         </WorkPlace>

@@ -27,6 +27,40 @@ export const NavBarStyled = styled.nav<NavBarStyledProps>`
   display: flex;
   justify-content: ${props => props.justifyContent || 'space-between'};
   align-items: center;
+
+  & button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  & img {
+    transition: all 400ms ease-in-out;
+    width: 30px;
+  }
+
+  @media (max-width: 1024px) {
+    & img {
+      width: 20px;
+      cursor: pointer;
+    }
+  
+  
+  @media (min-width: 1024px) {
+  & img:hover {
+    transform: scale(1.3);
+  }
+}
+`
+
+export const LanguagesButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media (max-width: 1024px) {
+    gap: 10px;
+  }
 `
 
 export const NavLinksBarStyled = styled.div<NavLinksBarStyledProps>`

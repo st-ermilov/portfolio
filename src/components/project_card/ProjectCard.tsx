@@ -7,6 +7,7 @@ import {
     TextContent
 } from "./ProjectCard.styled";
 import Icon from "../icon/Icon";
+import {useLanguage} from "../../App";
 
 type ProjectCardPropsType = {
     image: string
@@ -18,6 +19,7 @@ type ProjectCardPropsType = {
 }
 
 function ProjectCard(props: ProjectCardPropsType) {
+    const {language} = useLanguage()
     return (
         <ProjectCardContainer>
             <ProjectCardImageContainer>
@@ -30,11 +32,15 @@ function ProjectCard(props: ProjectCardPropsType) {
                 <ProjectLinkContainer>
                     <LinkStyled>
                         <Icon iconId={'link_icon'}/>
-                        <a href={props.preview} target={'_blank'}>Live Preview</a>
+                        {language === 'en'
+                                ? <a href={props.preview} target={'_blank'}>Live Preview</a>
+                                : <a href={props.preview} target={'_blank'}>Пример</a>}
                     </LinkStyled>
                     <LinkStyled>
                         <Icon iconId={'link_github_icon'}/>
-                        <a href={props.viewCode} target={'_blank'}>View Code</a>
+                        {language === 'en'
+                            ?  <a href={props.viewCode} target={'_blank'}>View Code</a>
+                            :  <a href={props.viewCode} target={'_blank'}>Исходный код</a>}
                     </LinkStyled>
                 </ProjectLinkContainer>
             </TextContent>
