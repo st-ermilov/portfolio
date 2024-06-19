@@ -31,7 +31,7 @@ const myProjects = [
         textEN: 'A more mobile-focused app that combines a todo list, currency converter and weather application',
         textRU: 'Приложение, ориентированное на мобильные устройства и сочетающее в себе список дел, конвертер валют и погодное приложение.',
         techStack: 'React, TypeScript, Redux Toolkit, HTML5, SCSS',
-        preview: 'https://3-in-1-react.vercel.app/#/weather',
+        preview: 'https://3-in-1-react.vercel.app/',
         viewCode: 'https://github.com/st-ermilov/3-in-1-react'
     },
     {
@@ -41,7 +41,7 @@ const myProjects = [
         textEN: 'Pizza ordering site with basic necessary functionality (filtering, search, selection of pizza parameters, shopping cart).',
         textRU: 'Сайт доставки пиццы с базовым функционалом (фильтрация, поиск, выбор параметров пиццы, корзина).',
         techStack: 'React, TypeScript, Redux Toolkit, HTML5, SCSS',
-        preview: 'https://pizza-react-daoz2a931-stermilovs-projects.vercel.app/?page=1&limit=4&sortBy=rating&order=asc',
+        preview: 'https://pizza-react-chi.vercel.app/?page=1&limit=4&sortBy=rating&order=asc',
         viewCode: 'https://github.com/st-ermilov/pizza-react'
     },
     {

@@ -27,7 +27,7 @@ function Footer() {
             <FooterFirstLine>
                 <Icon iconId={'logo'} height={'60px'} width={'100px'}/>
                 <FirstLineContacts>
-                    <p>+79188956832</p>
+                    <a href="tel:+79188956832">+79188956832</a>
                     <SocialMediaBarStyled>
                         <SocialMediaLink><a href="https://github.com/st-ermilov" target={'_blank'}><Icon
                             iconId={'github_icon'}/></a></SocialMediaLink>

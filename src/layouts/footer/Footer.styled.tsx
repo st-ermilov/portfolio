@@ -29,15 +29,18 @@ export const FooterFirstLine = styled.div`
 
 export const FirstLineContacts = styled.div`
   display: flex;
+  align-items: center;
   gap: 40px;
 
 
-  & p {
+  & a {
     font-family: Roboto, serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    text-decoration: none;
+    color: black;
   }
 
   @media (max-width: 700px) {
