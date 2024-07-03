@@ -14,12 +14,10 @@ export const GlobalStyles = createGlobalStyle<GlobalStylesPropsType>`
   }
 
   body {
-    max-width: 1170px;
     margin: 0 auto;
+    position: relative;
+    width: 100%;
     overflow: ${props => props.overFlow || ''};
-    @media (max-width: 1170px) {
-      padding: 0 40px;
-    }
   }
 `
 

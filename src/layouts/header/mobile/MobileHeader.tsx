@@ -16,6 +16,7 @@ import en from '../../../languages/en.json'
 import {useLanguage} from "../../../App";
 import RU from "../../../styles/assets/RU.svg";
 import EN from "../../../styles/assets/EN.svg";
+import {MenuButton} from "../../../../src/components/mobile_menu/MenuButton";
 
 function MobileHeader() {
 
@@ -27,9 +28,10 @@ function MobileHeader() {
             <HeaderStyled position={'sticky'}>
                 <NavBarStyled>
                     <Icon iconId={"logo"} height={'60px'} width={'100px'}/>
-                    <Icon iconId={isOpen ? 'menu' : 'close_icon'} height={'40px'} width={'40px'} onClick={() => {
-                        setIsOpen(!isOpen)
-                    }}/>
+                    <MenuButton isActive={isOpen} onClick={() => setIsOpen(!isOpen)}/>
+                    {/*<Icon iconId={isOpen ? 'menu' : 'close_icon'} height={'40px'} width={'40px'} onClick={() => {*/}
+                    {/*    setIsOpen(!isOpen)*/}
+                    {/*}}/>*/}
                 </NavBarStyled>
                 <MenuStyled height={isOpen ? '0px' : '100vh'}>
                     <NavLinksBarStyled flexDirection={'column'}>

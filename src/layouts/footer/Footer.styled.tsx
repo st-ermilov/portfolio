@@ -40,9 +40,19 @@ export const FirstLineContacts = styled.div`
     font-weight: 400;
     line-height: 26px;
     text-decoration: none;
-    color: black;
+    color: #221be4;
   }
 
+  & div {
+    border: 2px solid #221be4;
+    padding: 2px 7px;
+    border-radius: 20px;
+    transition: all 400ms ease-in-out;
+  }
+
+  & div:hover {
+    transform: scale(1.1);
+  }
   @media (max-width: 700px) {
     flex-direction: column;
     text-align: center;

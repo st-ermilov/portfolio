@@ -14,11 +14,16 @@ type NavLinksBarStyledProps = {
 export const HeaderStyled = styled.header<HeaderStyledPropsType>`
   height: 60px;
   width: 100%;
-  margin-top: 40px;
   position: ${(props) => props.position || ''};
   top: 0;
   z-index: 2;
   background-color: white;
+  padding: 0 10px;
+  box-shadow: 0 4px 4px #0000000d;
+  @media (min-width: 1024px) {
+    padding: 0 40px;
+  }
+}
 `
 
 export const NavBarStyled = styled.nav<NavBarStyledProps>`
@@ -27,6 +32,7 @@ export const NavBarStyled = styled.nav<NavBarStyledProps>`
   display: flex;
   justify-content: ${props => props.justifyContent || 'space-between'};
   align-items: center;
+
 
   & button {
     background: none;
