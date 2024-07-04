@@ -35,7 +35,6 @@ export const MyPhoto = styled.img`
   max-width: 350px;
   max-height: 350px;
   border-radius: 50%;
-  border: 2px solid #221be4;
   z-index: 1;
 
 `

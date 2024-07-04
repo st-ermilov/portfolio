@@ -18,7 +18,7 @@ export const HeaderStyled = styled.header<HeaderStyledPropsType>`
   top: 0;
   z-index: 2;
   background-color: white;
-  padding: 0 10px;
+  //padding: 0 10px;
   box-shadow: 0 4px 4px #0000000d;
   @media (min-width: 1024px) {
     padding: 0 40px;

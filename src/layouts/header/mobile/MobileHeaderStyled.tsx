@@ -30,6 +30,6 @@ export const MenuWrapper = styled.div<MenuStyledPropsType>`
   //display: ${props => props.display || 'none'};
   height: ${props => props.height || '0'};
   width: 100%;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(10px);
 `
 
