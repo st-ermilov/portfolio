@@ -3,6 +3,7 @@ import {Greetings, HomeContainer, MyPhoto} from "./Home.styled";
 import photo from '../../styles/assets/my_photo.webp'
 import {Fade} from "react-awesome-reveal";
 import {useLanguage} from "../../App";
+import {BackgroundAnimated} from "../../../src/components/BackgroundAnimated";
 
 
 function Home() {
@@ -10,6 +11,7 @@ const {language} = useLanguage()
     return (
         <Fade>
             <HomeContainer id={'home'}>
+                <BackgroundAnimated/>
                 {language === 'en'
                 ? <Greetings>
                         Hi 👋,<br/>

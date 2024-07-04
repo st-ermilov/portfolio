@@ -5,6 +5,7 @@ import SkillIcon from "../../components/icon/SkillIcon";
 import {useMediaQuery} from "react-responsive";
 import {Fade} from "react-awesome-reveal";
 import {useLanguage} from '../../App';
+import {BackgroundAnimated} from "../../../src/components/BackgroundAnimated";
 
 const skills = ['HTML_skill', 'CSS_skill', 'JS_skill', 'TS_skill', 'React_skill',
     'Redux_skill', 'Bootstrap_skill', 'Tailwind_skill', 'SASS_skill', 'Git_skill',
@@ -16,13 +17,13 @@ function TechStack() {
 
     return (
         <TechStackContainer id={'tech_stack'}>
+            <BackgroundAnimated/>
             {language === 'en'
             ? <Title>My Tech Stack</Title>
             : <Title>Мой технологический стек</Title>}
             {language === 'en'
                 ? <p>Technologies I’ve been working with recently</p>
                 : <p>Технологии, с которыми я работал в последнее время</p>}
-
             <SkillsContainer>
                 <Fade cascade={true} damping={0.1}>
                     {isMobile

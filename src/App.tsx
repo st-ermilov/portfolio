@@ -12,6 +12,7 @@ import {useMediaQuery} from "react-responsive";
 import MobileHeader from "./layouts/header/mobile/MobileHeader";
 import {AppContainer} from "../src/AppContainer";
 import {AppWrapper} from "../src/AppWrapper";
+import {BackgroundAnimated} from "../src/components/BackgroundAnimated";
 
 interface LanguageContextType {
     language: string;

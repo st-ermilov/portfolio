@@ -9,7 +9,7 @@ import {
 } from "../desctop/Header.styled";
 import Icon from "../../../components/icon/Icon";
 import {anchorLinks} from "../desctop/Header";
-import {MenuStyled} from "./MobileHeaderStyled";
+import {MenuStyled, MenuWrapper} from "./MobileHeaderStyled";
 import {MyThemeProvider} from "../../../styles/GlobalStyles";
 import ru from '../../../languages/ru.json'
 import en from '../../../languages/en.json'
@@ -21,7 +21,6 @@ import {MenuButton} from "../../../../src/components/mobile_menu/MenuButton";
 function MobileHeader() {
 
     const [isOpen, setIsOpen] = React.useState(true)
-
     const {language, setLanguage} = useLanguage()
     return (
         <MyThemeProvider overFlow={!isOpen ? 'hidden' : ''}>
@@ -29,11 +28,9 @@ function MobileHeader() {
                 <NavBarStyled>
                     <Icon iconId={"logo"} height={'60px'} width={'100px'}/>
                     <MenuButton isActive={isOpen} onClick={() => setIsOpen(!isOpen)}/>
-                    {/*<Icon iconId={isOpen ? 'menu' : 'close_icon'} height={'40px'} width={'40px'} onClick={() => {*/}
-                    {/*    setIsOpen(!isOpen)*/}
-                    {/*}}/>*/}
                 </NavBarStyled>
-                <MenuStyled height={isOpen ? '0px' : '100vh'}>
+                <MenuWrapper height={isOpen ? '0px' : '100dvh'}>
+                <MenuStyled height={isOpen ? '0px' : '70dvh'}>
                     <NavLinksBarStyled flexDirection={'column'}>
                         {language === 'en' ? en.menu.map((link, index) => (<NavLink
                                 to={anchorLinks[index]}
@@ -80,6 +77,7 @@ function MobileHeader() {
                         }}><img src={EN}/></button>
                     </LanguagesButtons>
                 </MenuStyled>
+                </MenuWrapper>
             </HeaderStyled>
         </MyThemeProvider>
     );

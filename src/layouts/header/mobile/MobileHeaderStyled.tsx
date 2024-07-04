@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 type MenuStyledPropsType = {
-    height: string
+    height?: string
+    display?: string
 }
 export const MenuStyled = styled.div<MenuStyledPropsType>`
   display: flex;
@@ -24,3 +25,11 @@ export const MenuStyled = styled.div<MenuStyledPropsType>`
     margin: 0;
   }
 `
+
+export const MenuWrapper = styled.div<MenuStyledPropsType>`
+  //display: ${props => props.display || 'none'};
+  height: ${props => props.height || '0'};
+  width: 100%;
+  backdrop-filter: blur(1px);
+`
+
